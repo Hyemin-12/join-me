@@ -1,0 +1,13 @@
+body{
+    background-color: #F5BE00;
+}
+header{
+    text-align: center;
+}
+main .page{
+    width: 1180px;
+    height: 839px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    margin: auto;
+}
