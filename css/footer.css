@@ -1,21 +1,21 @@
 /* FOOTER  CSS */
 .footer {
-    width: 100%; /* 넓이를 100%로 채우기 반응형 */
+    width: 100%;
     background-color: #B68A34;
-    padding: 10px 90px;
+    position: absolute;
+    bottom: 0;
   }
   
   .contain {
-    /* margin-left: 1rem;
-    margin-right: 1rem; */
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-evenly;  
+    padding: 10px
   }
   
   .footer .col {
     align-items: center;
     float: left;
-    column-gap: 40px; /*글자사이의 거리 */
+    column-gap: 40px; 
   }
   
   .footer .col .social {
@@ -23,16 +23,14 @@
   }
 
   .footer .col ul {
-    list-style-type: none; /* • 모양 없애기 */
+    list-style-type: none;
   }
   
   .footer .col ul li {
     color: #fff;
     font-size: 0.97vw;
-    /*글자사이의 간격*/
     padding: 6px 0px 6px 0px; 
-    cursor: pointer; /*cursor 마우스 커서 모양 뜨기 */
-    /*마우스 커서 시 색상 변하는 속도 조절 */
+    cursor: pointer; 
     transition: 0.2s; 
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
@@ -42,18 +40,18 @@
     display: inline-block;
   }
    
-  i {
-    font-size: 1.1rem;
+  .footer i::before {
+    font-size: 1.5rem;
+    color: white;
   }
-  /*마우스커서 올릴 시 글자의 색상이 변함 */
+
   .footer .col ul li:hover {
-    color: purple;
+    color: darkslategray;
     transition: 0.1s;
     -webkit-transition: 0.1s;
     -moz-transition: 0.1s;
   }
   
-  /*마우스커서 올릴 시 글자의 색상이 변함 */
   .social ul li img :hover {
     color: #fff;
     transition: 0.1s;
