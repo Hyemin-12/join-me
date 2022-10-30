@@ -1,0 +1,66 @@
+/* FOOTER  CSS */
+.footer {
+    width: 100%; /* 넓이를 100%로 채우기 반응형 */
+    background-color: #B68A34;
+    padding: 10px 90px;
+  }
+  
+  .contain {
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
+    display: flex;
+    justify-content: space-between;  
+  }
+  
+  .footer .col {
+    align-items: center;
+    float: left;
+    column-gap: 40px; /*글자사이의 거리 */
+  }
+  
+  .footer .col .social {
+    float: left;
+  }
+
+  .footer .col ul {
+    list-style-type: none; /* • 모양 없애기 */
+  }
+  
+  .footer .col ul li {
+    color: #fff;
+    font-size: 0.97vw;
+    /*글자사이의 간격*/
+    padding: 6px 0px 6px 0px; 
+    cursor: pointer; /*cursor 마우스 커서 모양 뜨기 */
+    /*마우스 커서 시 색상 변하는 속도 조절 */
+    transition: 0.2s; 
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+  }
+  
+  .social ul li {
+    display: inline-block;
+  }
+   
+  i {
+    font-size: 1.1rem;
+  }
+  /*마우스커서 올릴 시 글자의 색상이 변함 */
+  .footer .col ul li:hover {
+    color: purple;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+  }
+  
+  /*마우스커서 올릴 시 글자의 색상이 변함 */
+  .social ul li img :hover {
+    color: #fff;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+  }
+  
+  .clearfix {
+    clear: both;
+  }
