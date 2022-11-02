@@ -2,6 +2,12 @@ body {
     background-color: #F5BE00;
 }
 
+a,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
 #logo {
     margin: auto;
     display: block;
@@ -45,6 +51,12 @@ body {
     align-items: center;
     background-color: white;
     border-radius: 10px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.right-container:hover {
+    box-shadow: 5px 5px 5px rgb(119, 119, 119);
 }
 
 i {
