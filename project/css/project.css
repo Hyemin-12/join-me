@@ -11,3 +11,8 @@ main .page{
     border-radius: 30px;
     margin: auto;
 }
+.role.box1{
+    width: 244px;
+    height: 327px;
+    background-color: #F5BE00;
+}
