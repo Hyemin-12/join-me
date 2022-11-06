@@ -1,0 +1,89 @@
+body {
+    background-color: #F5BE00;
+    margin-left: 80px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+i {
+    font-size: 4rem;
+    color: white;
+}
+
+input {
+    border: none;
+    background-color: #F5BE00;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea {
+    border: none;
+    background-color: #F5BE00;
+    width: 800px;
+    height: 150px;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.manager {
+    font-size: 1.5rem;
+}
+
+.dead-line {
+    font-size: 1rem;
+}
+
+.progress {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+progress {
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 50px;
+    width: 800px;
+    height: 40px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #F58400;
+    border-radius: 50px 0px 0px 50px;
+}
+
+.info {
+    font-size: 2rem;
+    padding-top: 40px;
+}
+
+.info-content {
+    font-size: 1.5rem;
+}
+
+.feedback {
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+.feedback-content {
+    background-color: white;
+    width: 800px;
+    height: 200px;
+    border-radius: 30px;
+}
