@@ -9,9 +9,10 @@ main .page{
     height: 839px;
     background-color: #FFFFFF;
     border-radius: 30px;
+    display: flex;
     margin: auto;
 }
-main .popup{
+.popup{
     width: 1044px;
     height: 767px;
     border-radius: 10px;
