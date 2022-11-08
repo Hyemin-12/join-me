@@ -1,11 +1,11 @@
 window.onload = () => {
-    let openBtn = document.getElementsByClassName('open')[0];
-    if(openBtn){
-        openBtn.onclick = openRolePopup;
+    let openRole = document.getElementById('role-open');
+    if(openRole){
+        openRole.onclick = openRolePopup;
     }
-    let closeBtn = document.getElementsByClassName('close')[0];
-    if(closeBtn){
-        closeBtn.onclick = closeRolePopup;
+    let closeRole = document.getElementById('role-close');
+    if(closeRole){
+        closeRole.onclick = closeRolePopup;
     }
 }
 

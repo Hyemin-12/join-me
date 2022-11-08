@@ -47,7 +47,7 @@ header{
     cursor: pointer;
 }
 
-#project-page .role:hover {
+#project-page .role-card:hover {
 box-shadow: 5px 5px 5px rgb(119, 119, 119);
 }
 
@@ -130,7 +130,7 @@ box-shadow: 5px 5px 5px rgb(119, 119, 119);
     width: 1000px;
     height: 650px;
     margin: auto;
-    top: -700px;
+    top: -680px;
     background-color: #F5BE00;
     padding-left: 40px;
     display: none;
