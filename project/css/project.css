@@ -38,7 +38,7 @@ header{
     column-gap: 20px;
 }
 
-#project-page .role {
+#project-page .role-card {
     width:220px; 
     height:300px;
     background-color: #F5BE00;
