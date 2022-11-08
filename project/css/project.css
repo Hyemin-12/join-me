@@ -91,7 +91,7 @@ box-shadow: 5px 5px 5px rgb(119, 119, 119);
     border-radius: 50px 0px 0px 50px;
 }
 
-#project-page #add-role-btn {
+#project-page #add-role-open {
     width:220px; 
     height:300px;
     background-color: #F5BE00;
@@ -104,7 +104,7 @@ box-shadow: 5px 5px 5px rgb(119, 119, 119);
     cursor: pointer;
 }
 
-#project-page #add-role-btn:hover {
+#project-page #add-role-open:hover {
     box-shadow: 5px 5px 5px rgb(119, 119, 119);
 }
 
@@ -214,6 +214,7 @@ box-shadow: 5px 5px 5px rgb(119, 119, 119);
     padding-left: 40px;
     display: none;
 }
+
 #edit-role-page .icon-container {
     display: flex;
     justify-content: flex-end;
@@ -300,6 +301,152 @@ box-shadow: 5px 5px 5px rgb(119, 119, 119);
 }
 
 #edit-role-page #edit-role-button {
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    border: 0px;
+    cursor: pointer;
+}
+
+/*** ADD-ROLE ***/
+#add-role-page {
+    position: relative;
+    z-index: 100;
+    width: 1000px;
+    height: 650px;
+    margin: auto;
+    top: -680px;
+    background-color: #F5BE00;
+    padding-left: 40px;
+    display: none;
+}
+
+#add-role-page .icon-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#add-role-page i {
+    font-size: 4rem;
+    color: white;
+}
+
+#add-role-page .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#add-role-page input {
+    border: none;
+    background-color: #F5BE00;
+}
+
+#add-role-page input:focus {
+    outline: none;
+}
+
+#add-role-page input::placeholder {
+    color: black;
+}
+
+#add-role-page textarea {
+    border: none;
+    background-color: #F5BE00;
+    width: 800px;
+    height: 50px;
+    resize: none;
+}
+
+#add-role-page textarea:focus {
+    outline: none;
+}
+
+#add-role-page textarea::placeholder {
+    color: black;
+}
+
+#add-role-page .title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#add-role-page .manager {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+#add-role-page .deadline {
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+#add-role-page input[type="date"]::-webkit-calendar-picker-indicator,
+#add-role-page input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    appearance: none;
+}
+
+#add-role-page #datepicker {
+    font-size: 1.2rem;
+}
+
+#add-role-page .progress {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+#add-role-page progress {
+    appearance: none;
+}
+
+#add-role-page progress::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 50px;
+    width: 800px;
+    height: 40px;
+}
+
+#add-role-page progress::-webkit-progress-value {
+    background-color: #F58400;
+    border-radius: 50px 0px 0px 50px;
+}
+
+#add-role-page .info {
+    font-size: 2rem;
+    padding-top: 40px;
+}
+
+#add-role-page .info-content {
+    font-size: 1.5rem;
+}
+
+#add-role-page .feedback {
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+#add-role-page .feedback-content {
+    margin-top: 10px;
+    background-color: white;
+    width: 800px;
+    height: 200px;
+    border-radius: 30px;
+}
+
+#add-role-page .button-container {
+    margin-top: 40px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+#add-role-page #add-role-button {
     width: 400px;
     height: 100px;
     background-color: white;
