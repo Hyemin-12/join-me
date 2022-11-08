@@ -24,26 +24,38 @@ h1{
 .intro{
     padding-left: 40px;
 }
-div.role{
-    justify-content: space-between;
+.role-container{
     display: flex;
-    justify-content: space-around;
+    padding-left: 40px;
 }
-div.box1{
-    width:244px; height:327px;
-    float: left;
+.add-role-btn{
+    width:240px; 
+    height:330px;
     background-color: #F5BE00;
     border-radius: 10px;
-}
-div.box2{
-    width:244px; height:327px;
     float: left;
-    background-color: #F5BE00;
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.3s;
+    cursor: pointer;
 }
-div.box3{
-    width:244px; height:327px;
-    float: left;
-    background-color: #F5BE00;
-    border-radius: 10px;
+
+.add-role-btn:hover {
+    box-shadow: 5px 5px 5px rgb(119, 119, 119);
+}
+
+.circle {
+    background-color: white;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    font-size: 5rem;
+    color: #F5BE00;
 }
