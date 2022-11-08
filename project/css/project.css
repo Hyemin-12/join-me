@@ -201,3 +201,100 @@ box-shadow: 5px 5px 5px rgb(119, 119, 119);
     height: 200px;
     border-radius: 30px;
 }
+
+/*** EDIT-ROLE ***/
+#edit-role-page {
+    position: relative;
+    z-index: 100;
+    width: 1000px;
+    height: 650px;
+    margin: auto;
+    top: -680px;
+    background-color: #F5BE00;
+    padding-left: 40px;
+    display: none;
+}
+#edit-role-page .icon-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#edit-role-page i {
+    font-size: 4rem;
+    color: white;
+}
+
+#edit-role-page input {
+    border: none;
+    background-color: #F5BE00;
+}
+
+#edit-role-page input:focus {
+    outline: none;
+}
+
+#edit-role-page .title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#edit-role-page .manager {
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+#edit-role-page .dead-line {
+    font-size: 1rem;
+}
+
+#edit-role-page .progress {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+#edit-role-page progress {
+    appearance: none;
+}
+
+#edit-role-page progress::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 50px;
+    width: 800px;
+    height: 40px;
+}
+
+#edit-role-page progress::-webkit-progress-value {
+    background-color: #F58400;
+    border-radius: 50px 0px 0px 50px;
+}
+
+#edit-role-page .info {
+    font-size: 2rem;
+    margin: 40px 0px 10px 0px;
+}
+
+#edit-role-page .info-content {
+    font-size: 1.5rem;
+    border: none;
+    background-color: #F5BE00;
+    width: 800px;
+    height: 30px;
+    resize: none;
+    margin-top: -10px;
+}
+
+#edit-role-page .info-content:focus {
+    outline: none;
+}
+#edit-role-page .feedback {
+    font-size: 2rem;
+    margin-top: 8px;
+}
+
+#edit-role-page .feedback-content {
+    margin-top: -10px;
+    background-color: white;
+    width: 800px;
+    height: 200px;
+    border-radius: 30px;
+}
