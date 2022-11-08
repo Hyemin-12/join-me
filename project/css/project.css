@@ -1,35 +1,97 @@
 body{
     background-color: #F5BE00;
 }
+
 header{
     text-align: center;
 }
-.project-page{
+
+#project-page{
     position: relative;
     width: 1180px;
-    height: 750px;
+    height: 700px;
     background-color: #FFFFFF;
     border-radius: 30px;
     margin: auto;
 }
-.project-page h1{
+
+#project-page h1{
     padding-left: 40px;
     padding-top: 20px;
 }
-.project-page .deadline{
+
+#project-page .deadline{
     padding-left: 40px;
 }
-.project-page .personal{
+
+#project-page .personal{
     padding-left: 40px;
 }
-.project-page .intro{
+
+#project-page .intro{
     padding-left: 40px;
 }
-.project-page .role-container{
+
+#project-page .role-container{
     display: flex;
     padding-left: 40px;
+    column-gap: 20px;
 }
-.project-page #add-role-btn {
+
+#project-page .role {
+    width:220px; 
+    height:300px;
+    background-color: #F5BE00;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+#project-page .role:hover {
+box-shadow: 5px 5px 5px rgb(119, 119, 119);
+}
+
+
+#project-page .role-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#project-page .role-manager {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#project-page .role-deadline {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#project-page .role-progress {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#project-page .role-progress-bar {
+    appearance: none;
+    margin-left: 10px;
+}
+
+#project-page .role-progress-bar::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 50px;
+    width: 200px;
+    height: 18px;
+}
+
+#project-page .role-progress-bar::-webkit-progress-value {
+    background-color: #F58400;
+    border-radius: 50px 0px 0px 50px;
+}
+
+#project-page #add-role-btn {
     width:220px; 
     height:300px;
     background-color: #F5BE00;
@@ -42,11 +104,11 @@ header{
     cursor: pointer;
 }
 
-.project-page #add-role-btn:hover {
+#project-page #add-role-btn:hover {
     box-shadow: 5px 5px 5px rgb(119, 119, 119);
 }
 
-.project-page .circle {
+#project-page .circle {
     background-color: white;
     border-radius: 50%;
     width: 110px;
@@ -56,7 +118,7 @@ header{
     align-items: center;
 }
 
-.project-page i {
+#project-page i {
     font-size: 5rem;
     color: #F5BE00;
 }
