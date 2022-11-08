@@ -13,10 +13,6 @@ i {
     color: white;
 }
 
-.title {
-    font-size: 2rem;
-}
-
 .manager {
     font-size: 1.5rem;
 }
@@ -47,20 +43,20 @@ progress::-webkit-progress-value {
 }
 
 .info {
-    font-size: 2rem;
     padding-top: 40px;
 }
 
 .info-content {
     font-size: 1.5rem;
+    height: 50px;
 }
 
 .feedback {
-    font-size: 2rem;
     margin-top: 40px;
 }
 
 .feedback-content {
+    margin-top: 10px;
     background-color: white;
     width: 800px;
     height: 200px;
