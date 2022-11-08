@@ -224,6 +224,14 @@ box-shadow: 5px 5px 5px rgb(119, 119, 119);
     color: white;
 }
 
+#edit-role-page .flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    justify-content: space-between;
+
+}
+
 #edit-role-page input {
     border: none;
     background-color: #F5BE00;
@@ -286,15 +294,19 @@ box-shadow: 5px 5px 5px rgb(119, 119, 119);
 #edit-role-page .info-content:focus {
     outline: none;
 }
-#edit-role-page .feedback {
-    font-size: 2rem;
-    margin-top: 8px;
+
+#edit-role-page .button-container {
+    align-self: center;
 }
 
-#edit-role-page .feedback-content {
-    margin-top: -10px;
+#edit-role-page #edit-role-button {
+    width: 400px;
+    height: 100px;
     background-color: white;
-    width: 800px;
-    height: 200px;
-    border-radius: 30px;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    border: 0px;
+    cursor: pointer;
 }

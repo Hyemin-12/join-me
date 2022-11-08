@@ -73,18 +73,23 @@
             <div class="icon-container">
                 <i id="edit-role-close" class='bx bx-x'></i>
             </div>
-            <input class="title" value="발표자"/>
-            <br/>
-            <input class="manager" value="김미림"/>
-            <div class="dead-line">2022.11.17</div>
-            <div class="progress"><b>진행 상황</b></div>
-            <progress value="20" max="100"></progress>
-            <h1 class="info">역할 소개</h1>
-            <div class="text">
-                <textarea class="info-content" maxlength="32">프로젝트 대본 작성 및 발표</textarea>
+            <div class="flex-container">
+                <div class="content-container">
+                    <input class="title" value="발표자"/>
+                    <br/>
+                    <input class="manager" value="김미림"/>
+                    <div class="dead-line">2022.11.17</div>
+                    <div class="progress"><b>진행 상황</b></div>
+                    <progress value="20" max="100"></progress>
+                    <h1 class="info">역할 소개</h1>
+                    <div class="text">
+                        <textarea class="info-content" maxlength="32">프로젝트 대본 작성 및 발표</textarea>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button id="edit-role-button" type="button">수정하기</button>
+                </div>
             </div>
-            <h1 class="feedback">피드백</h1>
-            <div class="feedback-content"></div>
         </div>
     </main>
     <script src="./js/project.js"></script>

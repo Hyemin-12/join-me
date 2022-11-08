@@ -10,6 +10,8 @@ window.onload = () => {
     if(openEditRole) openEditRole.onclick = openEditRolePopup;
     let closeEditRole = document.getElementById('edit-role-close');
     if(closeEditRole) closeEditRole.onclick = closeEditRolePopup;
+    let saveEditRole = document.getElementById('edit-role-button');
+    if(saveEditRole) saveEditRole.onclick = closeEditRolePopup;
 }
 
 // role 팝업
