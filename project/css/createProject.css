@@ -12,6 +12,13 @@ main .page{
     display: flex;
     margin: auto;
 }
+.x{
+    width: 58px;
+    height: 58px;
+    display: block;
+    margin-left: auto;
+}
+
 .popup{
     width: 1044px;
     height: 767px;
