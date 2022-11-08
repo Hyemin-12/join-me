@@ -14,7 +14,7 @@
         <img src="/img/logo.png" alt="logo"  width="250px" height="85px">
     </header>
     <main>
-        <div class="page">
+        <div class="project-page">
             <div class="top">
                 <div class="title">
                     <h1>프로젝트 제목</h1>
@@ -39,14 +39,30 @@
                     <h1>역할</h1>
                 </div>
                 <div class="role-container">
-                    <div class="add-role-btn">
+                    <div id="add-role-btn" class="open">
                         <div class="circle">
-                            <i class='bx bx-plus' ></i>
+                            <i class='bx bx-plus'></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="role-page">
+            <div class="icon-container">
+                <i class='bx bx-dots-horizontal-rounded'></i>
+                <i class='bx bx-x close'></i>
+            </div>
+            <h1 class="title">발표자</h1>
+            <div class="manager">김미림</div>
+            <div class="dead-line">2022.11.17</div>
+            <div class="progress"><b>진행 상황</b></div>
+            <progress value="20" max="100"></progress>
+            <h1 class="info">역할 소개</h1>
+            <div class="info-content">프로젝트 대본 작성 및 발표</div>
+            <h1 class="feedback">피드백</h1>
+            <div class="feedback-content"></div>
+        </div>
     </main>
+    <script src="./js/project.js"></script>
 </body>
 </html>

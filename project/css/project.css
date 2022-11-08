@@ -4,31 +4,32 @@ body{
 header{
     text-align: center;
 }
-main .page{
+.project-page{
+    position: relative;
     width: 1180px;
     height: 750px;
     background-color: #FFFFFF;
     border-radius: 30px;
     margin: auto;
 }
-h1{
+.project-page h1{
     padding-left: 40px;
     padding-top: 20px;
 }
-.deadline{
+.project-page .deadline{
     padding-left: 40px;
 }
-.personal{
+.project-page .personal{
     padding-left: 40px;
 }
-.intro{
+.project-page .intro{
     padding-left: 40px;
 }
-.role-container{
+.project-page .role-container{
     display: flex;
     padding-left: 40px;
 }
-.add-role-btn{
+.project-page #add-role-btn {
     width:220px; 
     height:300px;
     background-color: #F5BE00;
@@ -41,11 +42,11 @@ h1{
     cursor: pointer;
 }
 
-.add-role-btn:hover {
+.project-page #add-role-btn:hover {
     box-shadow: 5px 5px 5px rgb(119, 119, 119);
 }
 
-.circle {
+.project-page .circle {
     background-color: white;
     border-radius: 50%;
     width: 110px;
@@ -55,7 +56,86 @@ h1{
     align-items: center;
 }
 
-i {
+.project-page i {
     font-size: 5rem;
     color: #F5BE00;
+}
+
+/*** ROLE ***/
+#role-page {
+    position: relative;
+    z-index: 100;
+    width: 1000px;
+    height: 650px;
+    margin: auto;
+    top: -700px;
+    background-color: #F5BE00;
+    padding-left: 40px;
+    display: none;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#role-page i {
+    font-size: 4rem;
+    color: white;
+    cursor: pointer;
+}
+
+#role-page .title {
+    margin: 0;
+}
+
+#role-page .manager {
+    font-size: 1.5rem;
+}
+
+#role-page .dead-line {
+    font-size: 1rem;
+}
+
+#role-page .progress {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+#role-page progress {
+    appearance: none;
+}
+
+#role-page progress::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 50px;
+    width: 800px;
+    height: 40px;
+}
+
+#role-page progress::-webkit-progress-value {
+    background-color: #F58400;
+    border-radius: 50px 0px 0px 50px;
+}
+
+#role-page .info {
+    margin: 0;
+    margin-top: 40px;
+}
+
+#role-page .info-content {
+    font-size: 1.5rem;
+    height: 50px;
+}
+
+#role-page .feedback {
+    margin: 0;
+}
+
+#role-page .feedback-content {
+    margin-top: 10px;
+    background-color: white;
+    width: 800px;
+    height: 200px;
+    border-radius: 30px;
 }
