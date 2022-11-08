@@ -18,7 +18,6 @@ main .page{
     display: block;
     margin-left: auto;
 }
-
 .popup{
     width: 1044px;
     height: 767px;
@@ -26,7 +25,14 @@ main .page{
     background-color: #F5BE00;
     margin: auto;
 }
-
+.popup h1{
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.progress b{
+    padding-top: 20px;
+    padding-left: 40px;
+}
 .popup .progress {
     font-size: 1.2rem;
     margin-top: 20px;
@@ -34,9 +40,11 @@ main .page{
 
 .popup progress {
     appearance: none;
+    margin-top: 20px;
 }
 
 .popup progress::-webkit-progress-bar {
+    margin-left: 40px;
     background-color: white;
     border-radius: 50px;
     width: 800px;
@@ -50,7 +58,9 @@ main .page{
 .popup #add-role-btn {
     width:220px; 
     height:300px;
-    background-color: #eeeeee;
+    margin-top: 20px;
+    margin-left: 40px;
+    background-color: white;
     border-radius: 10px;
     float: left;
     display: flex;
@@ -64,7 +74,7 @@ main .page{
 }
 
 .popup .circle {
-    background-color: white;
+    background-color: #eeeeee;
     border-radius: 50%;
     width: 110px;
     height: 110px;
@@ -76,4 +86,7 @@ main .page{
 .popup i {
     font-size: 5rem;
     color: #F5BE00;
+}
+.people b{
+    margin-left: 40px;
 }
