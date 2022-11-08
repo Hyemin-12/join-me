@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>createproject</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/createProject.css">
 </head>
 <body>
@@ -20,8 +21,18 @@
                 <div class="title">
                     <h1>프로젝트 제목을 입력해주세요</h1>
                 </div>
-                <div class="deadline">
-                    마감일 선택     
+                <div class="progress"><b>마감일 선택</b></div>
+                <progress value="20" max="100"></progress>
+                <div class="people">
+                    <h1>인원</h1>
+                    인원수를 입력하세요
+                    <div class="role-container">
+                    <div id="add-role-btn" class="open">
+                        <div class="circle">
+                            <i class='bx bx-plus'></i>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
