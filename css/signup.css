@@ -1,0 +1,78 @@
+body {
+    background-color: #F5BE00;
+}
+
+#logo {
+    margin: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-left: -20px;
+}
+
+.icon {
+    position: relative;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+input {
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    padding-left: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#open-eye,
+#close-eye {
+    position: relative;
+    margin-left: -35px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+#open-eye {
+    display: inline;
+}
+
+#close-eye {
+    display: none;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    background-color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

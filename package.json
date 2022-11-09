@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "crypto": "^1.0.1",
+    "mysql": "^2.18.1",
     "pikaday": "^1.8.2"
   }
 }
