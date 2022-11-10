@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join Me?</title>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./css/default.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
     <div id="wrapper">
-        <img id="logo" src="./img/logo.png" alt="logo" width="250px" height="85px"/>
+        <header>
+            <img id="logo" src="/img/logo.png" alt="logo" width="250px" height="85px"/>
+            <a href="/auth/logout"><i class='bx bx-exit'></i></a>
+        </header>
         <div class="flex-container">
             <div class="left-container">
                 <div class="title"><b>프로젝트 목록</b></div>
@@ -20,7 +23,7 @@
                     <div class="project-item"></div>
                 </div>
             </div>
-            <a href="">
+            <a href="/project/create">
                 <div class="right-container">
                     <i class='bx bx-plus'></i>
                     <div class="content">자신이 원하는 프로젝트를 만들어보세요!</div>

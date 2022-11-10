@@ -13,10 +13,32 @@ a {
 }
 
 .container {
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 10px;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-left: -20px;
+}
+
+.icon {
+    position: relative;
+    margin-top: 10px;
+    font-size: 1.2rem;
 }
 
 input {
@@ -31,10 +53,10 @@ input:focus {
     outline: none;
 }
 
-i {
+#open-eye,
+#close-eye {
     position: relative;
-    margin-left: -25px;
-    top: 4px;
+    margin-left: -35px;
     cursor: pointer;
     font-size: 1.2rem;
 }
@@ -48,6 +70,7 @@ i {
 }
 
 button {
+    margin-top: 20px;
     width: 200px;
     height: 50px;
     border-radius: 10px;
@@ -61,4 +84,12 @@ button {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+}
+
+p {margin-top: -5px;
+    font-size: 0.8rem;
+}
+
+p:hover {
+    font-weight: bold;
 }

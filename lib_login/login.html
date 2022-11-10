@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="/css/default.css">
+        <link rel="stylesheet" href="/css/footer.css">
+        <link rel="stylesheet" href="/css/login.css">
+    </head>
+    <body>
+        <img id="logo" src="/img/logo.png" alt="logo" width="250px" height="85px"/>
+        <div class="container">
+            <form action="/auth/login_process" method="post">
+                <div class="id-container">
+                    <div>id</div>
+                    <input id="id" name="id" type="text" placeholder="이메일을 입력하세요."/>
+                </div>
+                <div class="pw-container">
+                    <div>pw</div>
+                    <input id="pw" name="pw" type="password" placeholder="비밀번호를 입력하세요."/>
+                    <i id="open-eye" class='bx bx-show'></i>
+                    <i id="close-eye" class='bx bxs-show' ></i>
+                </div>
+                <br>
+                <button><b>로그인</b></button>
+            </form>
+            <div class="flex-container">
+                <a href="/auth/register">회원가입</a>
+                <p> | </p>
+                <a href="#">id/pw 찾기</a>
+            </div>
+        </div>
+        <script src="/js/login.js"></script>
+    </body>
+</html>

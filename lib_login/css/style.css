@@ -8,6 +8,10 @@ a:visited {
     color: black;
 }
 
+header {
+    display: flex;
+}
+
 #logo {
     margin: auto;
     display: block;
@@ -65,4 +69,10 @@ i {
 
 i::before {
     font-size: 3rem;
+}
+
+.bx-exit {
+    color: white;
+    margin-right: 10px;
+    margin-top: 10px;
 }

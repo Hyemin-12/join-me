@@ -12,25 +12,11 @@ a {
     color: black;
 }
 
-.container {
-    margin-top: 100px;
+form {
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 20px;
-}
-
-.content-container {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-    margin-left: -20px;
-}
-
-.icon {
-    position: relative;
-    margin-top: 10px;
-    font-size: 1.2rem;
 }
 
 input {
@@ -45,10 +31,10 @@ input:focus {
     outline: none;
 }
 
-#open-eye,
-#close-eye {
+i {
     position: relative;
-    margin-left: -35px;
+    margin-left: -25px;
+    top: 4px;
     cursor: pointer;
     font-size: 1.2rem;
 }

@@ -12,11 +12,16 @@ main .page{
     display: flex;
     margin: auto;
 }
-.x{
-    width: 58px;
-    height: 58px;
-    display: block;
-    margin-left: auto;
+
+.close {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.popup .bx-x {
+    font-size: 4rem;
+    color: white;
+
 }
 .popup{
     width: 1044px;
