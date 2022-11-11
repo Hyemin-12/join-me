@@ -37,12 +37,56 @@ header {
 }
 
 .project-container {
-    width: 400px;
+    width: 500px;
     height: 350px;
     margin-top: 10px;
     background-color: white;
     border-radius: 10px;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-item {
+    width: 460px;
+    height: 100px;
+    background-color: #F5BE00;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.project-item:hover {
+    box-shadow: 5px 5px 5px rgb(119, 119, 119);
+}
+
+.left-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 10px;
+    border-right: 2px solid white;
+}
+
+.item-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.progress {
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.right-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 10px;
 }
 
 /*** right-container ***/
