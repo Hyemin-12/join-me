@@ -417,9 +417,20 @@ box-shadow: 5px 5px 5px rgb(119, 119, 119);
     border-radius: 50px 0px 0px 50px;
 }
 
+#add-role-page .icon-flex-container {
+    margin-top: 30px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#add-role-page .icon-flex-container .bx {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 #add-role-page .info {
     font-size: 2rem;
-    padding-top: 40px;
 }
 
 #add-role-page .info-content {
