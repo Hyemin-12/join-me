@@ -10,10 +10,19 @@ a:visited {
 
 header {
     display: flex;
+    justify-content: center;
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+.logout {
+    float: right;
 }
 
 #logo {
-    margin: auto;
+    margin: 0 auto;
     display: block;
 }
 
