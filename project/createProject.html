@@ -4,38 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>createproject</title>
+    <title>createProject</title>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/css/createProject.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="./css/createProject.css">
 </head>
 <body>
-    <header>
-        <a href="/main"><img src="/img/logo.png" alt="logo"  width="250px" height="85px"></a>
-    </header>
-    <main>
-        <div class="page">
-            <div class="popup">
-                <div class="close">
-                    <i class='bx bx-x'></i>
-                </div>
-                <div class="title">
-                    <h1>프로젝트 제목을 입력해주세요</h1>
-                </div>
-                <div class="progress"><b>마감일 선택</b></div>
-                <progress value="20" max="100"></progress>
-                <div class="people">
-                    <h1>인원</h1>
-                    <b>인원수를 입력하세요</b>
-                </div>
-                <div class="role-container">
-                    <div id="add-role-btn" class="open">
-                        <div class="circle">
-                            <i class='bx bx-plus'></i>
-                        </div>
-                    </div>
-                </div>
+    <div class="icon-container">
+        <i class='bx bx-x'></i>
+    </div>
+    <input class="title" placeholder="프로젝트 제목을 입력해주세요"/>
+    <br/>
+    <div class="deadline">마감일 선택</div>
+    <input id="datepicker" type="date">
+    <div class="progress">진행 상황</div>
+    <progress id="progress-bar" value=0 max=100></progress>
+    <div class="icon-flex-container">
+        <div id="plus">
+            <i class='bx bx-plus'></i>
+        </div>
+        <div id="minus">
+            <i class='bx bx-minus' ></i>
+        </div>
+    </div>
+    <h1 class="info">인원</h1>
+    <input type="number" placeholder="인원을 입력해주세요" />
+
+    <div class="person-container">
+        <div id="person-open" class="person-card">
+            <div class="name"><b>이름</b></div>
+        </div>
+        <div id="add-person-open">
+            <div class="circle">
+                <i class='bx bx-plus'></i>
             </div>
         </div>
-    </main>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script src="./js/datepicker.js"></script>
+    <script src="./js/project.js"></script>
 </body>
 </html>

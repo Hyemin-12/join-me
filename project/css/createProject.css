@@ -1,70 +1,134 @@
-body{
+body {
     background-color: #F5BE00;
-}
-header{
-    text-align: center;
-}
-main .page{
-    width: 1180px;
-    height: 839px;
-    background-color: #FFFFFF;
-    border-radius: 30px;
-    display: flex;
-    margin: auto;
+    margin-left: 80px;
 }
 
-.close {
+.icon-container {
     display: flex;
     justify-content: flex-end;
 }
 
-.popup .bx-x {
+i {
     font-size: 4rem;
     color: white;
+}
 
-}
-.popup{
-    width: 1044px;
-    height: 767px;
-    border-radius: 10px;
+input {
+    border: none;
     background-color: #F5BE00;
-    margin: auto;
 }
-.popup h1{
-    padding-top: 20px;
-    padding-left: 40px;
+
+input:focus {
+    outline: none;
 }
-.progress b{
-    padding-top: 20px;
-    padding-left: 40px;
+
+input::placeholder {
+    color: black;
 }
-.popup .progress {
+
+textarea {
+    border: none;
+    background-color: #F5BE00;
+    width: 800px;
+    height: 50px;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+textarea::placeholder {
+    color: black;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.deadline {
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    appearance: none;
+}
+
+#datepicker {
+    font-size: 1.2rem;
+}
+
+.progress {
     font-size: 1.2rem;
     margin-top: 20px;
 }
 
-.popup progress {
+progress {
     appearance: none;
-    margin-top: 20px;
 }
 
-.popup progress::-webkit-progress-bar {
-    margin-left: 40px;
+progress::-webkit-progress-bar {
     background-color: white;
     border-radius: 50px;
     width: 800px;
     height: 40px;
 }
 
-.popup progress::-webkit-progress-value {
+progress::-webkit-progress-value {
     background-color: #F58400;
     border-radius: 50px 0px 0px 50px;
 }
-.popup #add-role-btn {
+
+.icon-flex-container {
+    margin-top: 30px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-flex-container .bx {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.info {
+    font-size: 2rem;
+    padding-top: 40px;
+}
+
+.person-container{
+    display: flex;
+    padding-top: 40px;
+    padding-left: 40px;
+    column-gap: 20px;
+}
+
+.person-card {
     width:220px; 
     height:300px;
-    margin-top: 20px;
-    margin-left: 40px;
+    background-color: white;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.person-card:hover {
+    box-shadow: 5px 5px 5px rgb(119, 119, 119);
+}
+
+.person-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#add-person-open {
+    width:220px; 
+    height:300px;
     background-color: white;
     border-radius: 10px;
     float: left;
@@ -74,12 +138,13 @@ main .page{
     transition-duration: 0.3s;
     cursor: pointer;
 }
-.popup #add-role-btn:hover {
+
+#add-person-open:hover {
     box-shadow: 5px 5px 5px rgb(119, 119, 119);
 }
 
-.popup .circle {
-    background-color: #eeeeee;
+.circle {
+    background-color: #F5BE00;
     border-radius: 50%;
     width: 110px;
     height: 110px;
@@ -88,10 +153,7 @@ main .page{
     align-items: center;
 }
 
-.popup i {
+i {
     font-size: 5rem;
-    color: #F5BE00;
-}
-.people b{
-    margin-left: 40px;
+    color: white;
 }
