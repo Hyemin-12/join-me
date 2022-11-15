@@ -98,25 +98,27 @@
             </div>
             <div class="flex-container">
                 <div class="content-container">
-                    <input class="title" placeholder="역할명을 입력해주세요."/>
-                    <br/>
-                    <input class="manager" placeholder="담당자명을 입력해주세요."/>
-                    <div class="deadline">마감일 선택</div>
-                    <input id="datepicker" type="date">
-                    <div class="progress">진행 상황</div>
-                    <progress id="progress-bar" value=0 max=100></progress>
-                    <div class="icon-flex-container">
-                        <div id="plus">
-                            <i class='bx bx-plus'></i>
+                    <form action="/role/create_progress" method="post">
+                        <input name="title" class="title" placeholder="역할명을 입력해주세요."/>
+                        <br/>
+                        <input name="manager" class="manager" placeholder="담당자명을 입력해주세요."/>
+                        <div class="deadline">마감일 선택</div>
+                        <input name="datepicker" id="datepicker" type="date">
+                        <div class="progress">진행 상황</div>
+                        <progress id="progress-bar" value=0 max=100></progress>
+                        <div class="icon-flex-container">
+                            <div id="plus">
+                                <i class='bx bx-plus'></i>
+                            </div>
+                            <div id="minus">
+                                <i class='bx bx-minus' ></i>
+                            </div>
                         </div>
-                        <div id="minus">
-                            <i class='bx bx-minus' ></i>
+                        <h1 class="info">역할 소개</h1>
+                        <div class="text">
+                            <textarea name="info" class="info-content" maxlength="32" placeholder="역할에 대한 설명을 입력해주세요."></textarea>
                         </div>
-                    </div>
-                    <h1 class="info">역할 소개</h1>
-                    <div class="text">
-                        <textarea class="info-content" maxlength="32" placeholder="역할에 대한 설명을 입력해주세요."></textarea>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div class="button-container">
