@@ -7,12 +7,12 @@
     <title>createProject</title>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
-    <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="./css/createProject.css">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/createProject.css">
 </head>
 <body>
     <div class="icon-container">
-        <i class='bx bx-x'></i>
+        <a href="#" onclick="history.back()"><i id="project-close" class='bx bx-x'></i></a>
     </div>
     <input class="title" placeholder="프로젝트 제목을 입력해주세요"/>
     <br/>
@@ -29,8 +29,6 @@
         </div>
     </div>
     <h1 class="info">팀원 추가</h1>
-    <!-- <input type="number" placeholder="인원을 입력해주세요" /> -->
-
     <div class="person-container">
         <div id="person-open" class="person-card">
             <div class="name"><b>이름</b></div>
@@ -43,7 +41,7 @@
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
-    <script src="./js/datepicker.js"></script>
-    <script src="./js/project.js"></script>
+    <script src="/js/datepicker.js"></script>
+    <script src="/js/project.js"></script>
 </body>
 </html>

@@ -13,14 +13,14 @@ window.onload = () => {
     let saveEditRole = document.getElementById('edit-role-button');
     if(saveEditRole) saveEditRole.onclick = closeEditRolePopup;
 
-    //addRole 팝업
+    // addRole 팝업
     let openAddRole = document.getElementById('add-role-open');
     if(openAddRole) openAddRole.onclick = openAddRolePopup;
     let closeAddRole = document.getElementById('add-role-close');
     if(closeAddRole) closeAddRole.onclick = closeAddRolePopup;
     let saveAddRole = document.getElementById('add-role-button');
     if(saveAddRole) saveAddRole.onclick = closeAddRolePopup;
-    
+
     // plus
     let plus = document.getElementById('plus');
     if(plus) plus.onclick = plusValue;
@@ -52,7 +52,7 @@ const closeEditRolePopup = () => {
     document.getElementById('role-page').style.display = 'block';
 }
 
-//addRole 팝업
+// addRole 팝업
 // 팝업 열기
 const openAddRolePopup = () => {
     document.getElementById('add-role-page').style.display = 'block';
@@ -67,7 +67,7 @@ const plusValue = () => {
     document.getElementById('progress-bar').value += 10;
     
 }
-//minus
+// minus
 const minusValue = () => {
     document.getElementById('progress-bar').value -= 10;
 }
