@@ -103,21 +103,35 @@ progress::-webkit-progress-value {
 .person-container{
     display: flex;
     padding-top: 40px;
-    padding-left: 40px;
     column-gap: 20px;
 }
 
 .person-card {
     width:220px; 
-    height:300px;
+    height:80px;
     background-color: white;
     border-radius: 10px;
     transition-duration: 0.3s;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .person-card:hover {
     box-shadow: 5px 5px 5px rgb(119, 119, 119);
+}
+
+.person-card .bx-x {
+    position: absolute;
+    color: black;
+    font-size: 2rem;
+    margin-left: 190px;
+    margin-top: -50px;
+}
+
+.name {
+    font-size: 1.4rem;
 }
 
 .person-title {
@@ -128,7 +142,7 @@ progress::-webkit-progress-value {
 
 #add-person-open {
     width:220px; 
-    height:300px;
+    height:80px;
     background-color: white;
     border-radius: 10px;
     float: left;
@@ -146,14 +160,35 @@ progress::-webkit-progress-value {
 .circle {
     background-color: #F5BE00;
     border-radius: 50%;
-    width: 110px;
-    height: 110px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-i {
-    font-size: 5rem;
+#add-person-open i {
+    font-size: 3rem;
     color: white;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+.gen-button {
+    width: 300px;
+    height: 80px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    background-color: white;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+.gen-button:hover {
+    box-shadow: 5px 5px 5px rgb(119, 119, 119);
 }
