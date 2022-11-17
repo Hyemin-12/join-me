@@ -13,21 +13,20 @@ i {
     color: white;
 }
 
-input {
+.search {
     border: none;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    width: 600px;
+    height: 50px;
 }
 
-input:focus {
+.search:focus {
     outline: none;
 }
 
-input::placeholder {
+.search::placeholder {
     color: black;
-}
-
-.search {
-    font-size: 2rem;
-    font-weight: bold;
 }
 
 #id{
@@ -48,8 +47,9 @@ input::placeholder {
 }
 
 #add-role-button {
-    width: 400px;
-    height: 100px;
+    width: 300px;
+    height: 80px;
+    margin-top: 500px;
     background-color: white;
     color: black;
     text-align: center;
