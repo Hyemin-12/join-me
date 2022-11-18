@@ -140,7 +140,7 @@ progress::-webkit-progress-value {
     margin-left: 10px;
 }
 
-#add-person-open {
+#person-open {
     width:220px; 
     height:80px;
     background-color: white;
@@ -153,7 +153,7 @@ progress::-webkit-progress-value {
     cursor: pointer;
 }
 
-#add-person-open:hover {
+#person-open:hover {
     box-shadow: 5px 5px 5px rgb(119, 119, 119);
 }
 
@@ -167,7 +167,7 @@ progress::-webkit-progress-value {
     align-items: center;
 }
 
-#add-person-open i {
+#person-open i {
     font-size: 3rem;
     color: white;
 }
@@ -191,4 +191,78 @@ progress::-webkit-progress-value {
 
 .gen-button:hover {
     box-shadow: 5px 5px 5px rgb(119, 119, 119);
+}
+
+/*** person-page ***/
+#person-page {
+    position: relative;
+    background-color: white;
+    margin-left: 80px;
+    display: none;
+    width: 800px;
+    height: 300px;
+    top: -600px;
+    border-radius: 10px;
+}
+
+#person-page .icon-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#person-page i {
+    font-size: 4rem;
+    color: #F5BE00;
+    cursor: pointer;
+}
+
+#person-page h2 {
+    margin-left: 20px;
+}
+
+#person-page .search {
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    width: 600px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#person-page .search:focus {
+    outline: none;
+}
+
+#person-page .search::placeholder {
+    color: black;
+}
+
+#person-page #id{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+#person-page .name{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+#person-page .button-container {
+    margin-top: 40px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+#person-page #complete-button {
+    width: 200px;
+    height: 60px;
+    background-color: #F5BE00;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    border: 0px;
+    cursor: pointer;
 }

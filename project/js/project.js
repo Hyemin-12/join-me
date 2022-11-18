@@ -18,8 +18,6 @@ window.onload = () => {
     if(openAddRole) openAddRole.onclick = openAddRolePopup;
     let closeAddRole = document.getElementById('add-role-close');
     if(closeAddRole) closeAddRole.onclick = closeAddRolePopup;
-    let saveAddRole = document.getElementById('add-role-button');
-    if(saveAddRole) saveAddRole.onclick = closeAddRolePopup;
 
     // plus
     let plus = document.getElementById('plus');
@@ -28,6 +26,12 @@ window.onload = () => {
     // minus
     let minus = document.getElementById('minus');
     if(minus) minus.onclick = minusValue;
+
+    // person 팝업
+    let openPerson = document.getElementById('person-open');
+    if(openPerson) openPerson.onclick = openPersonPopup;
+    let closePerson = document.getElementById('person-close');
+    if(closePerson) closePerson.onclick = closePersonPopup;
 }
 
 // role 팝업
@@ -60,6 +64,16 @@ const openAddRolePopup = () => {
 // 팝업 닫기
 const closeAddRolePopup = () => {
     document.getElementById('add-role-page').style.display = 'none';
+}
+
+// person 팝업
+// 팝업 열기
+const openPersonPopup = () => {
+    document.getElementById('person-page').style.display = 'block';
+}
+// 팝업 닫기
+const closePersonPopup = () => {
+    document.getElementById('person-page').style.display = 'none';
 }
 
 // plus
