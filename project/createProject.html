@@ -14,35 +14,37 @@
     <div class="icon-container">
         <a href="#" onclick="history.back()"><i id="project-close" class='bx bx-x'></i></a>
     </div>
-    <input class="title" placeholder="프로젝트 제목을 입력해주세요"/>
-    <br/>
-    <div class="deadline">마감일 선택</div>
-    <input id="datepicker" type="date">
-    <div class="progress">진행 상황</div>
-    <progress id="progress-bar" value=0 max=100></progress>
-    <div class="icon-flex-container">
-        <div id="plus">
-            <i class='bx bx-plus'></i>
-        </div>
-        <div id="minus">
-            <i class='bx bx-minus' ></i>
-        </div>
-    </div>
-    <h1 class="info">팀원 추가</h1>
-    <div class="person-container">
-        <div class="person-card">
-            <i class="bx bx-x"></i> 
-            <div class="name"><b>이름</b></div>
-        </div>
-        <div id="person-open">
-            <div class="circle">
+    <form action="/project/create_progress" method="post">
+        <input name="title" class="title" placeholder="프로젝트 제목을 입력해주세요"/>
+        <br/>
+        <div class="deadline">마감일 선택</div>
+        <input name="datepicker" id="datepicker" type="date">
+        <div class="progress">진행 상황</div>
+        <progress id="progress-bar" value=0 max=100></progress>
+        <div class="icon-flex-container">
+            <div id="plus">
                 <i class='bx bx-plus'></i>
             </div>
+            <div id="minus">
+                <i class='bx bx-minus' ></i>
+            </div>
         </div>
-    </div>
-    <div class="btn-container">
-        <button class="gen-button">생성하기</button>
-    </div>
+        <h1 class="info">팀원 추가</h1>
+        <div class="person-container">
+            <div class="person-card">
+                <i class="bx bx-x"></i> 
+                <div name="info" class="name"><b>이름</b></div>
+            </div>
+            <div id="person-open">
+                <div class="circle">
+                    <i class='bx bx-plus'></i>
+                </div>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button class="gen-button">생성하기</button>
+        </div>
+    </form>
     
     <div id="person-page">
         <div class="icon-container">

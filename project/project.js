@@ -6,13 +6,12 @@ router.get('/create', (req, res) => {
     res.sendFile(__dirname + '/createProject.html');
 })
 
-router.post('/create_progress', function (request, response) {
-    let title = request.body.title;
-    let manager = request.body.manager;
-    let date = request.body.datepicker;
-    let info = request.body.info;
+router.post('/create_progress', (req, res) => {
+    let title = req.body.title;
+    let date = req.body.datepicker;
+    let info = req.body.info;
 
-    console.log(title, manager, date, info)
+    res.send(title, date, info)
 })
 
 // 프로젝트 페이지
