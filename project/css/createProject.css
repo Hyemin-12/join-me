@@ -277,4 +277,32 @@ progress::-webkit-progress-value {
         font-size: 1.5rem;
         font-weight: bold;
     }
+
+    .deadline {
+        margin-top: 20px;
+        font-size: 1.1rem;
+    }
+
+    #datepicker {
+        font-size: 1.1rem;
+    }
+
+    .progress {
+        font-size: 1.1rem;
+        margin-top: 20px;
+    }
+
+    progress::-webkit-progress-bar {
+        background-color: white;
+        border-radius: 50px;
+        width: 600px;
+        height: 40px;
+    }
+
+    .icon-flex-container {
+        margin-top: 30px;
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
