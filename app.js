@@ -46,7 +46,7 @@ app.get('/main', (req, res) => {
     res.redirect('/auth/login');
     return false;
   }
-  res.sendFile(__dirname + '/lib_login/index.html');
+  res.sendFile(__dirname + '/views/lib_login/index.html');
 })
 
 app.listen(port, () => {

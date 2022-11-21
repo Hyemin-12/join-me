@@ -408,43 +408,6 @@ box-shadow: 5px 5px 5px rgb(119, 119, 119);
     font-size: 1.2rem;
 }
 
-#add-role-page .progress {
-    font-size: 1.2rem;
-    margin-top: 20px;
-}
-
-#add-role-page progress {
-    appearance: none;
-}
-
-#add-role-page progress::-webkit-progress-bar {
-    background-color: white;
-    border-radius: 50px;
-    width: 800px;
-    height: 40px;
-}
-
-#add-role-page progress::-webkit-progress-value {
-    background-color: #F58400;
-    border-radius: 50px 0px 0px 50px;
-}
-
-#add-role-page #value {
-    display: none;
-}
-
-#add-role-page .icon-flex-container {
-    margin-top: 30px;
-    width: 800px;
-    display: flex;
-    justify-content: space-between;
-}
-
-#add-role-page .icon-flex-container .bx {
-    font-size: 2rem;
-    cursor: pointer;
-}
-
 #add-role-page .info {
     font-size: 2rem;
 }

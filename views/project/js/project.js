@@ -18,6 +18,8 @@ window.onload = () => {
     if(openAddRole) openAddRole.onclick = openAddRolePopup;
     let closeAddRole = document.getElementById('add-role-close');
     if(closeAddRole) closeAddRole.onclick = closeAddRolePopup;
+    let saveAddRole = document.getElementById('add-role-button');
+    if(saveAddRole) saveAddRole.onclick = closeAddRolePopup
     
     // plus
     let plus = document.getElementById('plus');
@@ -48,12 +50,15 @@ window.onload = () => {
     if(openPerson) openPerson.onclick = openPersonPopup;
     let closePerson = document.getElementById('person-close');
     if(closePerson) closePerson.onclick = closePersonPopup;
+    let completeBtn = document.getElementById('complete-button');
+    if(completeBtn) completeBtn.onclick = closePersonPopup;
+
+    // person-card
+    let closeCard = document.getElementById('close-person-card');
+    if(closeCard) closeCard.onclick = closePersonCard;
 
     let genBtn = document.getElementById('gen-button');
     if(genBtn) genBtn.onclick = addValue;
-
-    let addRoleBtn = document.getElementById('add-role-button');
-    if(addRoleBtn) addRoleBtn.onclick = addValue;
 }
 
 // role 팝업
@@ -96,6 +101,12 @@ const openPersonPopup = () => {
 // 팝업 닫기
 const closePersonPopup = () => {
     document.getElementById('person-page').style.display = 'none';
+}
+
+// personCard
+// 닫기
+const closePersonCard = () => {
+    document.getElementById('person-card').style.display = 'none';
 }
 
 // plus

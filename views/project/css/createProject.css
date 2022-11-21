@@ -131,7 +131,11 @@ progress::-webkit-progress-value {
 }
 
 .name {
+    width: 200px;
+    height: 80px;
     font-size: 1.4rem;
+    background-color: white;
+    text-align: center;
 }
 
 .person-title {
@@ -201,7 +205,7 @@ progress::-webkit-progress-value {
     display: none;
     width: 800px;
     height: 300px;
-    top: -600px;
+    margin-top: -600px;
     border-radius: 10px;
 }
 
@@ -220,14 +224,21 @@ progress::-webkit-progress-value {
     margin-left: 20px;
 }
 
+#person-page .search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
 #person-page .search {
     border: none;
     border-radius: 10px;
     font-size: 1.2rem;
     width: 600px;
-    height: 50px;
-    margin-left: 20px;
-    margin-top: 20px;
+    height: 30px;
+    padding: 10px;
 }
 
 #person-page .search:focus {
@@ -236,6 +247,12 @@ progress::-webkit-progress-value {
 
 #person-page .search::placeholder {
     color: black;
+}
+
+#person-page .bx-search {
+    font-size: 3rem;
+    border: 0;
+    background-color: white;
 }
 
 #person-page #id{

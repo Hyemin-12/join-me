@@ -31,4 +31,22 @@ router.post('/', (req, res) => {
 	}
 })
 
+router.post('/', (req, res) => {
+  let title = req.body.roleTitle;
+  let manager = req.body.roleManager;
+  let date = req.body.roleDatepicker;
+  let info = req.body.roleInfo;
+
+  if(title && manager && date){
+    db.query('INSERT INTO roleTable (title, manager, date, members_name) VALUES (?, ?, ?, ?)', [title, manager, date, info], function (err, result) {
+      if (err) throw err;
+      else res.send(`<script type="text/javascript">alert("역할 생성 완료!");
+                    document.location.href="/";</script>`);
+    });
+  } else {
+  res.send(`<script type="text/javascript">alert("입력하지 않은 정보가 있습니다!");
+                    document.location.href="/";</script>`);
+}
+})
+
 module.exports = router;
