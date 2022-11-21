@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Me?</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="/css/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="logo"><a href="/index.html"><img src="/img/logo.png" alt="logo"  width="250px" height="85px"></a></div>
+            <div class="logout"></div><a class="logout" href="/auth/logout"><i class='bx bx-exit'></i></a>
+        </header>
+        <div class="flex-container">
+            <div class="left-container">
+                <div class="title"><b>프로젝트 목록</b></div>
+                <div class="project-container">
+                    <a href="/project">
+                        <div class="project-item">
+                            <div class="left-item-container">
+                                <div class="item-title"><%= data[0] %></div>
+                                <div class="progress-container">
+                                    <div class="progress">진행 상황</div>
+                                    <progress class="progress-bar" value="<%= data[2] %>" max="100"></progress>
+                                </div>
+                            </div>
+                            <div class="right-item-container">
+                                <div class="team-members"><%= data[3] %></div>
+                                <div class="deadline"><%= data[1] %></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a href="/project/create">
+                <div class="right-container">
+                    <i class='bx bx-plus'></i>
+                    <div class="content">자신이 원하는 프로젝트를 만들어보세요!</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="contain">
+            <div class="col">
+              <ul>
+                <li>암행어사 </li>
+                <li>서울특별시 관악구 호암로 546</li>
+                <li>전화 02-872-4071</li>
+                <li>팩스 02-887-0856</li>
+                <li>이메일 w2112@-mirim.hs.kr, w2117@-mirim.hs.kr</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+                <li>Home</li>
+                <li>개인정보 처리방침</li>
+                <li>이용약관</li>
+                <li>개인정보보호정책</li>
+                <li>FAQ</li>
+              </ul>
+            </div>
+            <div class="col social">
+                <ul>
+                    <li><i class='bx bxl-twitter' ></i></li>
+                    <li><i class='bx bxl-facebook' ></i></li>
+                    <li><i class='bx bxl-instagram'></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
