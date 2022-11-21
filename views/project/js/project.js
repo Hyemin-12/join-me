@@ -18,7 +18,7 @@ window.onload = () => {
     if(openAddRole) openAddRole.onclick = openAddRolePopup;
     let closeAddRole = document.getElementById('add-role-close');
     if(closeAddRole) closeAddRole.onclick = closeAddRolePopup;
-
+    
     // plus
     let plus = document.getElementById('plus');
     if(plus) plus.onclick = plusValue;
@@ -26,6 +26,14 @@ window.onload = () => {
     // minus
     let minus = document.getElementById('minus');
     if(minus) minus.onclick = minusValue;
+
+    // plus
+    let addPagePlus = document.getElementById('add-page-plus');
+    if(addPagePlus) addPagePlus.onclick = plusValue;
+
+    // minus
+    let addPageMinus = document.getElementById('add-page-minus');
+    if(addPageMinus) addPageMinus.onclick = minusValue;
 
     // plus
     let editPagePlus = document.getElementById('edit-page-plus');
@@ -41,8 +49,11 @@ window.onload = () => {
     let closePerson = document.getElementById('person-close');
     if(closePerson) closePerson.onclick = closePersonPopup;
 
-    let genBtn = document.getElementsByClassName('gen-button')[0];
+    let genBtn = document.getElementById('gen-button');
     if(genBtn) genBtn.onclick = addValue;
+
+    let addRoleBtn = document.getElementById('add-role-button');
+    if(addRoleBtn) addRoleBtn.onclick = addValue;
 }
 
 // role 팝업
@@ -90,13 +101,14 @@ const closePersonPopup = () => {
 // plus
 const plusValue = () => {
     document.getElementsByClassName('progress-bar')[0].value += 10;
-    document.getElementsByClassName('progress-bar')[1].value += 10;
-    
+    document.getElementsByClassName('add-role-progress-bar')[0].value += 10;
+    document.getElementById('progress-bar').value += 10;
 }
 // minus
 const minusValue = () => {
     document.getElementsByClassName('progress-bar')[0].value -= 10;
-    document.getElementsByClassName('progress-bar')[1].value -= 10;
+    document.getElementsByClassName('add-role-progress-bar')[0].value -= 10;
+    document.getElementById('progress-bar').value -= 10;
 }
 
 const addValue = () => {

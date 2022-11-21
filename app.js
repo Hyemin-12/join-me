@@ -6,6 +6,7 @@ const FileStore = require('session-file-store')(session)
 var authRouter = require('./views/lib_login/auth');
 var authCheck = require('./views/lib_login/authCheck');
 var projectRouter = require('./views/project/project');
+var roleRouter = require('./views/project/role');
 
 const app = express();
 const port = 3000;
@@ -37,6 +38,7 @@ app.get('/', (req, res) => {
 // 인증 라우터
 app.use('/auth', authRouter);
 app.use('/project', projectRouter);
+app.use('/role', roleRouter);
 
 // 메인 페이지
 app.get('/main', (req, res) => {

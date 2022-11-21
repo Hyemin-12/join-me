@@ -178,7 +178,7 @@ progress::-webkit-progress-value {
     margin-top: 300px;
 }
 
-.gen-button {
+#gen-button {
     width: 300px;
     height: 80px;
     border: 0;
@@ -189,7 +189,7 @@ progress::-webkit-progress-value {
     transition-duration: 0.3s;
 }
 
-.gen-button:hover {
+#gen-button:hover {
     box-shadow: 5px 5px 5px rgb(119, 119, 119);
 }
 
