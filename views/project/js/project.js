@@ -27,6 +27,14 @@ window.onload = () => {
     let minus = document.getElementById('minus');
     if(minus) minus.onclick = minusValue;
 
+    // plus
+    let editPagePlus = document.getElementById('edit-page-plus');
+    if(editPagePlus) editPagePlus.onclick = plusValue;
+ 
+    // minus
+    let editPageMinus = document.getElementById('edit-page-minus');
+    if(editPageMinus) editPageMinus.onclick = minusValue;
+
     // person 팝업
     let openPerson = document.getElementById('person-open');
     if(openPerson) openPerson.onclick = openPersonPopup;
@@ -81,12 +89,14 @@ const closePersonPopup = () => {
 
 // plus
 const plusValue = () => {
-    document.getElementById('progress-bar').value += 10;
+    document.getElementsByClassName('progress-bar')[0].value += 10;
+    document.getElementsByClassName('progress-bar')[1].value += 10;
     
 }
 // minus
 const minusValue = () => {
-    document.getElementById('progress-bar').value -= 10;
+    document.getElementsByClassName('progress-bar')[0].value -= 10;
+    document.getElementsByClassName('progress-bar')[1].value -= 10;
 }
 
 const addValue = () => {
