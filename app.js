@@ -3,20 +3,16 @@ const session = require('express-session')
 const bodyParser = require('body-parser');
 const FileStore = require('session-file-store')(session)
 
-var authRouter = require('./views/lib_login/auth');
-var authCheck = require('./views/lib_login/authCheck');
-var projectRouter = require('./views/project/project');
-var roleRouter = require('./views/project/role');
+var authRouter = require('./lib_login/auth');
+var authCheck = require('./lib_login/authCheck');
+var projectRouter = require('./project/project');
+var roleRouter = require('./project/role');
 
 const app = express();
 const port = 3000;
 
-app.set('views', __dirname + '/views') // 첫 번째 인자 views는 이름 바꾸면 안됨 (두 번째는 상관 없음)
-app.set('view engine', 'ejs') // view engine을 ejs로 하겠다
-app.engine('html', require('ejs').renderFile) // 확장자가 html이면 ejs로 해석을 해라
-
-app.use(express.static('./views/lib_login'));
-app.use(express.static('./views/project'));
+app.use(express.static('./lib_login'));
+app.use(express.static('./project'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(session({
   secret: '~~~',	// 원하는 문자 입력
@@ -46,7 +42,7 @@ app.get('/main', (req, res) => {
     res.redirect('/auth/login');
     return false;
   }
-  res.sendFile(__dirname + '/views/lib_login/index.html');
+  res.sendFile(__dirname + '/lib_login/index.html');
 })
 
 app.listen(port, () => {
